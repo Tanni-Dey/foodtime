@@ -1,0 +1,77 @@
+.foodtime_hero {
+  border-top: 1px solid rgba(63, 63, 63, 0.2);
+  padding: 132px 0 96px 0;
+}
+.foodtime_hero_tittle {
+  font-family: "Merienda";
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 130%;
+  color: #396c03;
+  margin-bottom: 27px;
+}
+.foodtime_hero_tittle span {
+  color: #ff8b00;
+}
+.foodtime_hero_p {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #676767;
+  margin-bottom: 27px;
+}
+
+.foodtime_form {
+  position: relative;
+}
+.foodtime_form::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 9px;
+  translate: 0 -51%;
+  height: 49px;
+  width: 49px;
+  border-radius: 50%;
+  background: #ff8b00;
+}
+
+.foodtime_input {
+  background: #ffffff;
+  border: 2px solid rgba(57, 108, 3, 0.3);
+  border-radius: 120px;
+  padding: 16px 20px 16px 74px;
+  width: 100%;
+  height: 69px;
+}
+
+.foodtime_input::placeholder {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 170%;
+  color: #c7c7c7;
+}
+.foodtime_search_btn {
+  position: absolute;
+  right: 2px;
+  top: 1px;
+  padding: 13px 50px;
+  background-color: #396c03;
+  border-radius: 120px;
+  display: flex;
+  align-items: center;
+}
+.foodtime_search_btn span {
+  margin-left: 8px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 170%;
+  color: #ffffff;
+  transform: rotate(0.88deg);
+}
+.foodtime_hero_img {
+  filter: drop-shadow(0px 12.2182px 27.0545px rgba(0, 0, 0, 0.15));
+}
