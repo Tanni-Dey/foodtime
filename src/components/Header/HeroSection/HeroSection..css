@@ -75,3 +75,26 @@
 .foodtime_hero_img {
   filter: drop-shadow(0px 12.2182px 27.0545px rgba(0, 0, 0, 0.15));
 }
+.foodtime_hero_delivered_card {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  backdrop-filter: blur(6px);
+  border-radius: 8.86914px;
+  width: 245px;
+  height: 118px;
+  padding: 18px 28px;
+}
+.foodtime_hero_delivered_card_h3 span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  color: #ff8b00;
+  margin-left: 13px;
+  /* display: flex; */
+  align-items: center;
+}

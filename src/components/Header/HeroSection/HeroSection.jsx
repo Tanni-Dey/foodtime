@@ -44,8 +44,30 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="col-lg-5 col-md-12 col-sm-12">
-            <div className="foodtime_hero_img">
-              <img className="img-fluid" src={heroImg} alt="" />
+            <div className="foodtime_img_content">
+              <div className="foodtime_hero_delivered_card">
+                <h3 className="foodtime_hero_delivered_card_h3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="40"
+                    height="40"
+                    fill="none"
+                    viewBox="0 0 40 40"
+                  >
+                    <path
+                      fill="#FF8B00"
+                      fill-rule="evenodd"
+                      d="M10.667 3.637A7.665 7.665 0 0 0 15.03 1.83a7.665 7.665 0 0 1 9.94 0 7.665 7.665 0 0 0 4.363 1.807 7.665 7.665 0 0 1 7.03 7.03 7.654 7.654 0 0 0 1.807 4.363 7.665 7.665 0 0 1 0 9.94 7.665 7.665 0 0 0-1.807 4.363 7.665 7.665 0 0 1-7.03 7.03 7.665 7.665 0 0 0-4.363 1.807 7.665 7.665 0 0 1-9.94 0 7.665 7.665 0 0 0-4.363-1.807 7.665 7.665 0 0 1-7.03-7.03A7.665 7.665 0 0 0 1.83 24.97a7.665 7.665 0 0 1 0-9.94 7.665 7.665 0 0 0 1.807-4.363 7.665 7.665 0 0 1 7.03-7.03Zm18.6 13.13a2.5 2.5 0 0 0-3.534-3.535L17.5 21.465l-3.233-3.232a2.5 2.5 0 0 0-3.535 3.534l5 5a2.5 2.5 0 0 0 3.535 0l10-10Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>200k+</span>
+                </h3>
+                <p>People Delivered</p>
+              </div>
+              <div className="foodtime_hero_img">
+                <img className="img-fluid" src={heroImg} alt="" />
+              </div>
             </div>
           </div>
         </div>
