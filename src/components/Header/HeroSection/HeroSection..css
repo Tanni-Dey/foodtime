@@ -1,6 +1,24 @@
 .foodtime_hero {
   border-top: 1px solid rgba(63, 63, 63, 0.2);
   padding: 132px 0 96px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.hero_left_leaf {
+  position: absolute;
+  top: -77px;
+  left: 0;
+  z-index: -1;
+  filter: blur(5px);
+}
+.hero_right_leaf {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  z-index: -1;
+  transform: rotate(-10deg);
+  filter: blur(2.5px);
 }
 .foodtime_hero_tittle {
   font-family: "Merienda";
@@ -41,9 +59,12 @@
   background: #ffffff;
   border: 2px solid rgba(57, 108, 3, 0.3);
   border-radius: 120px;
-  padding: 16px 20px 16px 74px;
+  padding: 16px 220px 16px 74px;
   width: 100%;
   height: 69px;
+}
+.foodtime_input:focus {
+  outline: none;
 }
 
 .foodtime_input::placeholder {
@@ -72,10 +93,19 @@
   color: #ffffff;
   transform: rotate(0.88deg);
 }
+.foodtime_img_content {
+  text-align: right;
+  position: relative;
+}
 .foodtime_hero_img {
   filter: drop-shadow(0px 12.2182px 27.0545px rgba(0, 0, 0, 0.15));
 }
 .foodtime_hero_delivered_card {
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  translate: -35%;
+  z-index: 2;
   background: linear-gradient(
     180deg,
     #ffffff 0%,
@@ -87,14 +117,100 @@
   height: 118px;
   padding: 18px 28px;
 }
-.foodtime_hero_delivered_card_h3 span {
+.foodtime_hero_delivered_card_svg_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foodtime_hero_delivered_card_h3 {
   font-family: "Poppins";
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
   color: #ff8b00;
   margin-left: 13px;
-  /* display: flex; */
-  align-items: center;
+}
+.foodtime_hero_delivered_card p {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 130%;
+  text-align: center;
+  color: #838383;
+}
+
+/* ----------responsive------- */
+/* ----xl device---- */
+@media (max-width: 1399px) {
+  .foodtime_hero_delivered_card {
+    translate: -22%;
+  }
+  .foodtime_hero_tittle {
+    font-size: 60px;
+    line-height: 125%;
+  }
+  .foodtime_hero_p {
+    font-size: 22px;
+  }
+  .foodtime_hero_img img {
+    max-width: 115%;
+  }
+}
+
+/* ---------large device----------- */
+@media (max-width: 1199px) {
+  .foodtime_hero_tittle {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .foodtime_hero_p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .foodtime_input {
+    height: 50px;
+  }
+  .foodtime_form::before {
+    width: 34px;
+    height: 34px;
+  }
+  .foodtime_input::placeholder {
+    font-size: 17px;
+  }
+  .foodtime_search_btn {
+    padding: 4px 30px;
+  }
+  .foodtime_hero_delivered_card {
+    width: 210px;
+    height: 100px;
+    translate: -10%;
+  }
+  .foodtime_hero_delivered_card_h3 {
+    font-size: 30px;
+  }
+  .foodtime_hero_delivered_card p {
+    font-size: 17px;
+  }
+}
+
+/* ---------medium device----------- */
+@media (max-width: 991px) {
+  .foodtime_hero {
+    padding: 50px 0 30px 0;
+    text-align: center;
+  }
+  .hero_left_leaf,
+  .hero_right_leaf {
+    display: none;
+  }
+  .foodtime_img_content {
+    margin-top: 100px;
+  }
+  .foodtime_hero_delivered_card {
+    top: -49px;
+  }
+}
+
+/* -----small device----- */
+@media (max-width: 767px) {
 }

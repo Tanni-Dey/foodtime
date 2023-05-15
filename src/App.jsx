@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Header/Navbar/Navbar";
 import HeroSection from "./components/Header/HeroSection/HeroSection";
+import NextSection from "./components/NextSection/NextSection";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Navbar />
         <HeroSection />
       </header>
+      <NextSection />
     </>
   );
 }

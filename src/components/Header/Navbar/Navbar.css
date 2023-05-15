@@ -70,3 +70,17 @@
   background-color: #f7a94a;
   color: #ffffff;
 }
+
+/* ------------------------responsive-------------------- */
+/* ---------large device----------- */
+@media (max-width: 1199px) {
+  .foodtime_nav_item {
+    margin-right: 25px;
+  }
+  .btn_login {
+    padding: 8px 30px;
+  }
+  .btn_cart {
+    padding: 10px 11px;
+  }
+}
